@@ -4,6 +4,7 @@
 
 #ifndef CPP_HW2_GAME_H
 #define CPP_HW2_GAME_H
+#include "player.hpp"
 
 
 class Game {

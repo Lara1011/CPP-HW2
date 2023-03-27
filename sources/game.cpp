@@ -2,7 +2,7 @@
 // Created by Lara Abu Hamad on 26/03/2023.
 //
 
-#include "Game.hpp"
+#include "game.hpp"
 Game::Game() {
 }
 

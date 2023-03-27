@@ -2,7 +2,7 @@
 // Created by Lara Abu Hamad on 26/03/2023.
 //
 
-#include "Player.hpp"
+#include "player.hpp"
 Player::Player() {
     Player::cardsLeft = 26;
     Player::cardsWon = 0;

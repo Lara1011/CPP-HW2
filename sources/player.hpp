@@ -13,6 +13,7 @@ namespace ariel {
         string name;
         int cardsLeft;
         int cardsWon;
+        double winRate;
     public:
         //Player() {};
 
@@ -21,6 +22,10 @@ namespace ariel {
         string getName();
 
         void setName(string name);
+
+        double getWinRate();
+
+        void setWinRate(double rate);
 
         int stacksize();
 

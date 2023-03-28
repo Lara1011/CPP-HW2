@@ -16,6 +16,7 @@ namespace ariel {
         Player::name = name;
         Player::cardsLeft = 26;
         Player::cardsWon = 0;
+        Player::winRate = 0.0;
     }
 
     string Player::getName() {
@@ -24,6 +25,14 @@ namespace ariel {
 
     void Player::setName(string name) {
         this->name = name;
+    }
+
+    double Player::getWinRate() {
+        return this->winRate;
+    }
+
+    void Player::setWinRate(double rate) {
+        this->winRate = rate;
     }
 
     int Player::stacksize() {

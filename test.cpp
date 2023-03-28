@@ -8,7 +8,10 @@
 #include "sources/game.hpp"
 #include "sources/card.hpp"
 
-TEST_CASE("demo example - Initialization"){
+using namespace std;
+using namespace ariel;
+
+TEST_CASE("demo example - Generate"){
     Player p1("Alice");
     Player p2("Bob");
 

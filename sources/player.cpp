@@ -3,35 +3,40 @@
 //
 
 #include "player.hpp"
-Player::Player() {
-    Player::cardsLeft = 26;
-    Player::cardsWon = 0;
-}
-Player::Player(const string name) {
-    Player::name = name;
-    Player::cardsLeft = 26;
-    Player::cardsWon = 0;
-}
 
-string Player::getName(){
-    return this->name;
-}
-void Player::setName(string name){
-    this->name = name;
-}
+namespace ariel {
+    Player::Player() {
+        Player::cardsLeft = 26;
+        Player::cardsWon = 0;
+    }
 
-int Player::stacksize(){
-    return this->cardsLeft;
-}
+    Player::Player(const string name) {
+        Player::name = name;
+        Player::cardsLeft = 26;
+        Player::cardsWon = 0;
+    }
 
-int Player::cardesTaken(){
-    return this->cardsWon;
-}
+    string Player::getName() {
+        return this->name;
+    }
 
-void Player::updateCards(int numOfCards){
-    this->cardsWon += numOfCards;
-}
+    void Player::setName(string name) {
+        this->name = name;
+    }
 
-void Player::decreaseCards(){
-    this->cardsLeft--;
+    int Player::stacksize() {
+        return this->cardsLeft;
+    }
+
+    int Player::cardesTaken() {
+        return this->cardsWon;
+    }
+
+    void Player::updateCards(int numOfCards) {
+        this->cardsWon += numOfCards;
+    }
+
+    void Player::decreaseCards() {
+        this->cardsLeft--;
+    }
 }

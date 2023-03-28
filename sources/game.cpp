@@ -3,17 +3,30 @@
 //
 
 #include "game.hpp"
-Game::Game() {
-}
+#include "player.hpp"
 
-Game::Game(Player p1, Player &p2) {
-    Game::p1 = p1;
-    Game::p2 = p2;
-}
+namespace ariel {
+    Game::Game() {
+    }
 
-void Game::playAll() {};
-void Game::playTurn() {};
-void Game::printLastTurn() {}
-void Game::printLog() {}
-void Game::printStats() {}
-void Game::printWiner() {}
+    Game::Game(Player& p1, Player& p2) {
+        if(p1.getName().empty() || p2.getName().empty())
+            throw invalid_argument("At least one of the players has no name !");
+        if(p1.getName() == p2.getName())
+            throw invalid_argument("There is only one player !");
+        this->p1 = p1;
+        this->p2 = p2;
+    }
+
+    void Game::playAll() {};
+
+    void Game::playTurn() {};
+
+    void Game::printLastTurn() {}
+
+    void Game::printLog() {}
+
+    void Game::printStats() {}
+
+    void Game::printWiner() {}
+}

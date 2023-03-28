@@ -12,7 +12,7 @@ namespace ariel {
 //        Player::cardsWon = 0;
 //    }
 
-    Player::Player(const string name) {
+    Player::Player(string name) {
         Player::name = name;
         Player::cardsLeft = 26;
         Player::cardsWon = 0;

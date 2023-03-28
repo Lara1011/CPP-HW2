@@ -9,7 +9,7 @@ using namespace std;
 
 namespace ariel {
     class Player {
-    public:
+    private:
         string name;
         int cardsLeft;
         int cardsWon;

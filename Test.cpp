@@ -18,11 +18,12 @@ TEST_CASE("demo example - Generate"){
     CHECK(p1.getName() == "Alice");
     CHECK(p2.getName() == "Bob");
 
-    Game game(p1,p2);
     CHECK(p1.stacksize() == 26);
-    CHECK(p1.stacksize() == 26);
+    CHECK(p2.stacksize() == 26);
     CHECK(p1.cardesTaken() == 0);
-    CHECK(p1.cardesTaken() == 0);
+    CHECK(p2.cardesTaken() == 0);
+    CHECK(p1.getWinRate() == 0.0);
+    CHECK(p2.getWinRate() == 0.0);
 }
 
 TEST_CASE("demo example - playing first 5 rounds"){
@@ -41,7 +42,7 @@ TEST_CASE("demo example - playing first 5 rounds"){
     CHECK(p1.stacksize() == 21);
     CHECK(p2.stacksize() == 21);
     CHECK(p1.cardesTaken() == 0);
-    CHECK(p1.cardesTaken() == 0);
+    CHECK(p2.cardesTaken() == 0);
 
     game.playAll();
 

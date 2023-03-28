@@ -7,39 +7,42 @@
 #include <string>
 using namespace std;
 
-class Player {
-public:
-    string name;
-    int cardsLeft;
-    int cardsWon;
-public:
-    Player(){};
-    Player(const string name);
+namespace ariel {
+    class Player {
+    public:
+        string name;
+        int cardsLeft;
+        int cardsWon;
+    public:
+        Player() {};
 
-    string getName(){
-        return this->name;
-    }
-    void setName(string name){
-        this->name = name;
-    }
+        Player(const string name);
 
-    int stacksize(){
-        return this->cardsLeft;
-    }
+        string getName() {
+            return this->name;
+        }
 
-    int cardesTaken(){
-        return this->cardsWon;
-    }
+        void setName(string name) {
+            this->name = name;
+        }
 
-    void updateCards(int numOfCards){
-        this->cardsWon = this->cardsWon + numOfCards;
-    }
+        int stacksize() {
+            return this->cardsLeft;
+        }
 
-    void decreaseCards(){
-        this->cardsLeft--;
-    }
+        int cardesTaken() {
+            return this->cardsWon;
+        }
 
-};
+        void updateCards(int numOfCards) {
+            this->cardsWon = this->cardsWon + numOfCards;
+        }
 
+        void decreaseCards() {
+            this->cardsLeft--;
+        }
+
+    };
+}
 
 #endif //CPP_HW2_PLAYER_H

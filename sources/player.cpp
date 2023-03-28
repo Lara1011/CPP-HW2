@@ -3,6 +3,8 @@
 //
 
 #include "player.hpp"
+#include <string>
+using namespace std;
 
 namespace ariel {
     Player::Player() {

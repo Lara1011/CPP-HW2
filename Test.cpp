@@ -7,7 +7,7 @@
 #include "sources/player.hpp"
 #include "sources/game.hpp"
 #include "sources/card.hpp"
-#include <string>
+
 using namespace std;
 using namespace ariel;
 

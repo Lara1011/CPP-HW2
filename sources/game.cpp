@@ -5,13 +5,16 @@
 #include "game.hpp"
 #include "player.hpp"
 #include <string>
+#include <iostream>
+#include <stdexcept>
+
 using namespace std;
 
 namespace ariel {
-    Game::Game() {
-    }
+//    Game::Game() {
+//    }
 
-    Game::Game(Player& p1, Player& p2) {
+    Game::Game(Player& p1, Player& p2): p1(p1), p2(p2) {
         if(p1.getName().empty() || p2.getName().empty())
             throw invalid_argument("At least one of the players has no name !");
         if(p1.getName() == p2.getName())

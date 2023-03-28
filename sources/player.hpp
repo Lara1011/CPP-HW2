@@ -14,33 +14,21 @@ namespace ariel {
         int cardsLeft;
         int cardsWon;
     public:
-        Player() {};
+        //Player() {};
 
         Player(const string name);
 
-        string getName() {
-            return this->name;
-        }
+        string getName();
 
-        void setName(string name) {
-            this->name = name;
-        }
+        void setName(string name);
 
-        int stacksize() {
-            return this->cardsLeft;
-        }
+        int stacksize();
 
-        int cardesTaken() {
-            return this->cardsWon;
-        }
+        int cardesTaken();
 
-        void updateCards(int numOfCards) {
-            this->cardsWon = this->cardsWon + numOfCards;
-        }
+        void updateCards(int numOfCards);
 
-        void decreaseCards() {
-            this->cardsLeft--;
-        }
+        void decreaseCards();
 
     };
 }

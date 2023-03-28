@@ -7,10 +7,10 @@
 using namespace std;
 
 namespace ariel {
-    Player::Player() {
-        Player::cardsLeft = 26;
-        Player::cardsWon = 0;
-    }
+//    Player::Player() {
+//        Player::cardsLeft = 26;
+//        Player::cardsWon = 0;
+//    }
 
     Player::Player(const string name) {
         Player::name = name;

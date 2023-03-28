@@ -15,7 +15,7 @@ namespace ariel {
         Player& p2;
 
     public:
-        Game() {};
+        //Game() {};
 
         Game(Player& p1, Player& p2);
 

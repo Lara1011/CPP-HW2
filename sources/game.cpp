@@ -14,18 +14,18 @@ namespace ariel {
 //    Game::Game() {
 //    }
 
-    Game::Game(Player& p1, Player& p2): p1(p1), p2(p2) {
-        if(p1.getName().empty() || p2.getName().empty())
+    Game::Game(Player& player1, Player& player2): p1(player1), p2(player2) {
+        if(player1.getName().empty() || player2.getName().empty())
             throw invalid_argument("At least one of the players has no name !");
-        if(p1.getName() == p2.getName())
+        if(player1.getName() == player2.getName())
             throw invalid_argument("There is only one player !");
-        this->p1 = p1;
-        this->p2 = p2;
+        this->p1 = player1;
+        this->p2 = player2;
     }
 
-    void Game::playAll() {};
+    void Game::playAll() {}
 
-    void Game::playTurn() {};
+    void Game::playTurn() {}
 
     void Game::printLastTurn() {}
 

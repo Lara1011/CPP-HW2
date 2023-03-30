@@ -9,7 +9,7 @@
 using namespace std;
 
 namespace ariel{
-    Card::Card(int value, char suit): value(value), suit(suit) {
+    Card::Card(int value, string suit): value(value), suit(suit) {
         this->value = value;
         this->suit = suit;
     }
@@ -22,11 +22,11 @@ namespace ariel{
         this->value = val;
     }
 
-    char Card::getSuit() {
+    string Card::getSuit() {
         return this->suit
     }
 
-    void Card::setSuit(char s) {
+    void Card::setSuit(string s) {
         this->suit = s;
     }
 }

@@ -4,22 +4,23 @@
 
 #ifndef CPP_HW2_CARD_H
 #define CPP_HW2_CARD_H
+#include <string>
 
 namespace ariel {
     class Card {
     private:
         int value;
-        char suit;
+        string suit;
     public:
-        card(int value, char suit);
+        card(int value, string suit);
 
         int getValue();
 
         void setValue(int val);
 
-        char getSuit();
+        string getSuit();
 
-        void setSuit(char s);
+        void setSuit(string s);
     };
 }
 
